@@ -129,7 +129,7 @@ if __name__ == "__main__":
         experimental_time = total_experimental_time[len(total_experimental_time)//2]
 
         theoretical_time = find_log_base_two(array_length)
-        ratios.append((experimental_time*1e9)/theoretical_time)
+        ratios.append((experimental_time*1e9)/theoretical_time) # Convers time of nanoseconds
 
         print(f"{array_length:<16,d}{k:<15,d}{actual_max:<15,d}{computed_max:<17,d}{theoretical_time:<20.2f}{experimental_time*1e9:<22.2f}{(experimental_time*1e9)/theoretical_time:<30.2f}")
     # Print medin ratio
