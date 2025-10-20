@@ -13,10 +13,7 @@ def right_shift(arr, k):
 
 
 def find_right_shift_number(arr):
-    # Start measuring time precisely
-
-    start_time = time.perf_counter()
-
+    # This was my initial attemp before realizing that this idea was stupid :)
     if not arr:
         return 0
     left, right = 0, len(arr) - 1
